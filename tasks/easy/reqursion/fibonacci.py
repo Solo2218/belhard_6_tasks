@@ -3,7 +3,7 @@
 """
 
 
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     if n <= 1:
         return 1
     elif n == 2:

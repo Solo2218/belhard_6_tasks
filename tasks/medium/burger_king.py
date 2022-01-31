@@ -46,6 +46,7 @@ def bread(func):
         result = func()
         print('<\\____________/>')
         return result
+
     return wrapper
 
 
@@ -54,6 +55,7 @@ def tomato(func):
         print('*** помидоры ****')
         result = func()
         return result
+
     return wrapper
 
 
@@ -62,6 +64,7 @@ def salad(func):
         print('~~~~ салат ~~~~~')
         result = func()
         return result
+
     return wrapper
 
 
@@ -70,6 +73,7 @@ def cheese(func):
         print('^^^^^ сыр ^^^^^^')
         result = func()
         return result
+
     return wrapper
 
 
@@ -78,6 +82,7 @@ def onion(func):
         print('----- лук ------')
         result = func()
         return result
+
     return wrapper
 
 

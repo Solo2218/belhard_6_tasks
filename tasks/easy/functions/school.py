@@ -22,25 +22,26 @@ school_data = {
 }
 
 
-def incr_students(school_data, school_class):
+def incr_students(school_data: dict, school_class: str) -> dict:
     school_data[school_class] += 1
     return school_data
 
 
-def decr_students(school_data, school_class):
+def decr_students(school_data: dict, school_class: str) -> dict:
     if school_data[school_class] > 0:
         school_data[school_class] -= 1
     return school_data
 
 
-def add_class(school_data, school_class):
+def add_class(school_data: dict, school_class: str) -> dict:
     school_data.setdefault(school_class, 0)
     return school_data
 
-def remove_class(school_data, school_class):
+
+def remove_class(school_data: dict, school_class: str) -> dict:
     del school_data[school_class]
     return school_data
 
 
-def calc_students(school_data):
+def calc_students(school_data: dict) -> int:
     return sum(school_data.values())

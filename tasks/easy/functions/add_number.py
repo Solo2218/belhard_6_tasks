@@ -15,7 +15,8 @@ add_three(3) # 6
 """
 
 
-def add_numb(x: int):
-    def inner(y: int):
+def add_numb(x: int) -> int:
+    def inner(y: int) -> int:
         return x + y
+
     return inner

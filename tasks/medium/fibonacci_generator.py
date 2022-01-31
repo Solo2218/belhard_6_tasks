@@ -20,7 +20,7 @@ StopIteration
 """
 
 
-def fibonacci(num_count):
+def fibonacci(num_count: int) -> int:
     fib1 = 0
     fib2 = 1
     if num_count >= 1:
