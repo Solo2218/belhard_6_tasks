@@ -20,3 +20,11 @@ line_print(some_list)
     3
 8
 """
+
+
+def line_print(collections: list | int, indent: int = 0):
+    for item in collections:
+        if isinstance(item, list):
+            line_print(item, indent + 1)
+        else:
+            print(' ' * 4 * indent + str(item))
