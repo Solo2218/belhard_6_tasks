@@ -33,10 +33,10 @@ n = 4
 """
 
 
-def generate_brackets(n: int, result: str = '', open: int = 0, close: int = 0) -> None:
+def generate_brackets(n: int, result: str = '', begin: int = 0, close: int = 0) -> None:
     if len(result) == (n * 2):
         print(result)
-    if open < n:
-        generate_brackets(n, result + '(', open + 1, close)
-    if close < open:
-        generate_brackets(n, result + ')', open, close + 1)
+    if begin < n:
+        generate_brackets(n, result + '(', begin + 1, close)
+    if close < begin:
+        generate_brackets(n, result + ')', begin, close + 1)
