@@ -24,3 +24,10 @@ n = 6:
 55555
 666666
 """
+
+
+def triangular_sequence(n: int, result: str = '', current: int = 1):
+    result += str(current) * current + '\n'
+    if current < n:
+        return triangular_sequence(n, result, current + 1)
+    return result
